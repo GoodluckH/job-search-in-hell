@@ -15,5 +15,5 @@
       }
     }
   ],
-    "rewrites": [{ "source": "/(.*)", "destination": "/job-search-in-hell/app" }]
+    "routes": [{ "src": "/(.*)", "dest": "/job-search-in-hell/app.py" }]
   }
