@@ -1,19 +1,5 @@
 {
-     "build": {
-    "env": {
-      "POETRY_VERSION": "1.8.0"
-    }
-
-  },
-  "builds": [
-    {
-      "src": "job-search-in-hell/app.py",
-      "use": "@vercel/python",
-      "config": {
-        "maxLambdaSize": "15mb", 
-        "runtime": "python3.9"
-      }
-    }
-  ],
-    "routes": [{ "src": "/(.*)", "dest": "/job-search-in-hell/app.py" }]
-  }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/job-search-in-hell/app" }
+  ]
+}
