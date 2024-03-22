@@ -1,3 +1,22 @@
-{
-  "rewrites": [{ "source": "/(.*)", "destination": "/job-search-in-hell/app" }]
-}
+{"build": {
+  "env": {
+    "POETRY_VERSION": "1.8.0"
+  }
+
+},
+"routes": [
+  {
+    "src": "/(.*)",
+    "dest": "job-search-in-hell/app.py"
+  }
+],
+"builds": [
+  {
+    "src": "test/wsgi.py",
+    "use": "@vercel/python",
+    "config": {
+      "maxLambdaSize": "15mb", 
+      "runtime": "python3.9"
+    }
+  }
+]}
