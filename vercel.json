@@ -7,7 +7,7 @@
   },
   "builds": [
     {
-      "src": "job-search-in-hell/app",
+      "src": "job-search-in-hell/app.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb", 
