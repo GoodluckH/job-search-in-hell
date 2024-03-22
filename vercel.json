@@ -1,0 +1,9 @@
+{
+    "builds": [
+        {
+          "src": "job-search-in-hell/app.py", 
+          "use": "@devjin8/vercel-poetry@latest"
+        }
+      ],
+    "rewrites": [{ "source": "/(.*)", "destination": "/job-search-in-hell/app" }]
+  }
