@@ -17,9 +17,9 @@ logging.basicConfig(level=logging.INFO)
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route('/')
 def home():
-    return "Flask Vercel Example - Hello World", 200
+    return 'Hello, World!'
 
 @app.route("/api/mergent/tasks", methods=["POST"])
 def mergent_task_handler():
