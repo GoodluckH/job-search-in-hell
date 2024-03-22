@@ -43,7 +43,3 @@ def mergent_task_handler():
 def perform_task(body):
     # TODO: Implement this function
     logging.info(f"Performing task: {body}")
-
-
-if __name__ == "__main__":
-    app.run(port=PORT)
